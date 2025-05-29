@@ -6,10 +6,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDateTime;
 
 @Document(collection = "tarefas")
+
 public class Tarefa {
 
     @Id
+    
     private String id;
+    
+    
     private String titulo;
     private String descricao;
     private boolean concluida;
